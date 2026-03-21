@@ -1,0 +1,76 @@
+﻿TC ID,Description,Steps,Test Data,Expected Result,,,
+TC001,Placeholder text,observe the placeholder text,N/A,"Shows correct format (e.g., https://example.com)",,,
+TC002,Field alignment,observe the field alignment,N/A,Matches UI design,,,
+TC003,Verify URL field is clickable,Click on URL field,N/A,"Cursor appears, field is active",,,
+TC004,Verify user can type in URL field,Enter text,https://www.google.com/search?q=google.com,Text is entered successfully,,,
+TC005,Verify paste using keyboard,Paste URL (Ctrl+V),https://google.com,URL pasted successfully,,,
+TC006,Verify paste using mouse,Right click → Paste,https://google.com,URL pasted successfully,,,
+TC007,Verify Enter key functionality,Enter URL + press Enter,https://google.com,Navigation/process starts,,,
+TC008,Verify Tab key functionality,Enter URL + press Tab,https://google.com,Cursor moves correctly,,,
+TC009,Validate HTTP URL,"Enter valid URL
+Click Submit",http://example.com,Accepted,,,
+TC010,Validate HTTPS URL,"Enter valid URL
+Click Submit",https://example.com,Accepted,,,
+TC011,Validate WWW URL,"Enter valid URL
+Click Submit",www.example.com,Accepted (based on requirements),,,
+TC012,Validate domain only,"Enter valid URL
+Click Submit",example.com,Accepted (if supported),,,
+TC013,Validate URL with path,"Enter valid URL
+Click Submit",https://example.com/page,Accepted,,,
+TC014,Validate URL with parameters,"Enter valid URL
+Click Submit",https://example.com?id=1,Accepted,,,
+TC015,Validate URL with anchor,"Enter valid URL
+Click Submit",https://example.com#section,Accepted,,,
+TC016,Validate URL with IP address,"Enter valid URL
+Click Submit",http://192.168.1.1,Accepted,,,
+TC017,Validate .com domain,"Enter valid URL
+Click Submit",example.com,Accepted,,,
+TC018,Validate .in domain,"Enter valid URL
+Click Submit",example.in,Accepted,,,
+TC019,Validate .xyz domain,"Enter valid URL
+Click Submit",example.xyz,Accepted,,,
+TC020,Validate multiple TLDs,"Enter valid URL
+Click Submit",example.org / example.site,Accepted,,,
+TC021,Invalid format string,"Enter invalid URL
+Click Submit",abc565656,Error message,,,
+TC022,Missing protocol invalid format,"Enter invalid URL
+Click Submit",http\example,Error message,,,
+TC023,Only extension,"Enter invalid URL
+Click Submit",https://www.com,Error,,,
+TC024,Only name without dot,"Enter invalid URL
+Click Submit",https://wwwexamplecom,Error,,,
+TC025,Invalid characters,"Enter invalid URL
+Click Submit",https://example@.com,Error,,,
+TC026,URL with spaces inside,"Enter invalid URL
+Click Submit",https://exa mple.com,Error,,,
+TC027,Space at beginning,"Enter invalid URL
+Click Submit",""" https://example.com""",Trimmed or rejected,,,
+TC028,Space at end,"Enter invalid URL
+Click Submit","""https://example.com """,Trimmed,,,
+TC029,Only spaces,"Enter spaces
+Click Submit",""" """,Error,,,
+TC030,Spaces in middle,"Enter invalid URL
+Click Submit",https://exa mple.com,Error,,,
+TC031,Minimum allowed length URL ,"Enter valid URL
+Click Submit",https://a.co,Accepted,,,
+TC032,Less than Minimum allowed length URL ,"Enter invalid URL
+Click Submit",https://a.c,Error,,,
+TC033,Maximum allowed length URL ,"Enter valid URL
+Click Submit",longest allowed URL (255 chars),Accepted,,,
+TC034,Less than Maximum allowed length URL ,"Enter invalid URL
+Click Submit",Very long URL (255+ chars),Error,,,
+TC035,Encoded URL,"Enter valid URL
+Click Submit",https://example.com/%20test,Accepted,,,
+TC036,URL with special char (#),"Enter valid URL
+Click Submit",https://example.com#abc,Accepted,,,
+TC037,URL with forward slash,"Enter valid URL
+Click Submit",https://example.com/,Accepted,,,
+TC038,Add/remove forward slash,"Enter valid URL
+Click Submit",example.com/,Works correctly,,,
+TC039,SQL Injection,"Enter SQL
+Click Submit",' OR 1=1 --,Blocked,,,
+TC040,XSS Attack,"Enter Invalid URL
+Click Submit",alert(1),Blocked,,,
+TC041,Special char injection,"Enter valid URL
+Click Submit",< > { },Not executed,,,
+,,,,,,,
