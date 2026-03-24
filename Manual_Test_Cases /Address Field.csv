@@ -1,4 +1,4 @@
-﻿TC ID,Test Case Description,Test Steps,Test Data,Expected Result,,,
+﻿TC ID,Test Case Description,Test Steps,Test Data, Expected Result,,,
 TC-001,Enter valid address,Enter full address and submit,"""Amman, Jordan""",Address is accepted and saved,,,
 TC-002,Enter alphanumeric address,Enter address with letters & numbers,"""Street 12""",Accepted,,,
 TC-003,Enter special characters,Enter address with symbols,"""Street-12, #5""",Accepted (if allowed),,,
