@@ -1,0 +1,21 @@
+﻿Bug ID,Title,Related TC,Steps to Reproduce,Expected Result,Actual Result,Severity,Priority,Attachments,Reported By,Date Reported,Status
+BUG_001,Search is case sensitive,TC_004,"1. Enter ""bag""
+2. Enter ""BAG""",Same results for both inputs,Different results shown,Medium,High,Screenshot.png,Barah Taijon,4/5/2026,New
+BUG_002,Leading spaces not trimmed,TC_005,"1. Enter "" iphone""
+2. Search","Spaces trimmed, correct results",No/incorrect results,Medium,Medium,Screenshot.png,Barah Taijon,4/6/2026,New
+BUG_003,Empty search returns results,TC_006,"1. Leave input empty
+2. Click search",Validation message / no search,Results displayed,Low,Medium,Screenshot.png,Barah Taijon,4/7/2026,New
+BUG_004,Max length not handled,TC_007,1. Enter very long input,Input restricted or error shown,UI breaks / slow response,High,High,Screenshot.png,Barah Taijon,4/8/2026,New
+BUG_005,Special characters crash search,TC_009,"1. Enter ""@#$%""
+2. Search",Handled safely,System crash / error page,High,High,Screenshot.png,Barah Taijon,4/9/2026,New
+BUG_006,No suggestion for misspelling,TC_013,"1. Enter ""iphon""","Suggest ""iphone""",No suggestion shown,Medium,Medium,Screenshot.png,Barah Taijon,4/10/2026,New
+BUG_007,Multiple filters not applied correctly,TC_016,"1. Apply Category
+2. Apply Price",Results match both filters,One filter ignored,High,High,Screenshot.png,Barah Taijon,4/11/2026,New
+BUG_008,Reset filters not working,TC_017,"1. Apply filters
+2. Click reset",Filters cleared,Filters remain,Medium,High,Screenshot.png,Barah Taijon,4/12/2026,New
+BUG_009,Sorting not correct,TC_019,1. Sort low → high,Correct ascending order,Incorrect/random order,Medium,High,Screenshot.png,Barah Taijon,4/13/2026,New
+BUG_010,Autocomplete delay,TC_014,"1. Type ""iph""",Suggestions < 300ms,Delay > 2s,Low,Medium,Screenshot.png,Barah Taijon,4/14/2026,New
+BUG_011,Pagination duplicates results,TC_025,1. Search 2. Go to page 2,New results,Duplicate results,Medium,Medium,Screenshot.png,Barah Taijon,4/15/2026,New
+BUG_012,Missing product images,TC_027,1. Perform search,Images or placeholders shown,Missing images,Low,Low,Screenshot.png,Barah Taijon,4/16/2026,New
+BUG_013,Mobile UI not responsive,TC_024,"1. Open on mobile
+2. Search",Responsive layout,Broken UI,High,High,Screenshot.png,Barah Taijon,4/17/2026,New
