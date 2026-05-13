@@ -40,5 +40,8 @@ openshop.sql
 ### Newman Execution
 Below is the terminal output after running the collection:
 
-### Newman Execution
+### Newman HTML Report Execution
+Below is the terminal output after running the collection:
+
+### Jenkins Execution
 Below is the terminal output after running the collection:
