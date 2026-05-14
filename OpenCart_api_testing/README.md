@@ -50,7 +50,7 @@ Ensure both services are running before proceeding.
 
 ### 2. Database Setup
 - Open phpMyAdmin
-- Create a new database:
+- Create a new database
 - Import OpenCart database structure if required
 - Ensure proper configuration between OpenCart and MySQL
 
@@ -72,25 +72,46 @@ Ensure both services are running before proceeding.
 
 ## Automated Execution (Newman CLI)
 
-### Run Collection:
+### Run Collection
+
 ```bash
-newman run collection.json
+newman run https://api.postman.com/collections/36794430-6bf83ad7-c549-487d-acf8-09175ef48e8d?access_key=PMAT-01KRFBJG9K15215E1HVMFNR26
+
 ```
-console build:
-![Console Build](screenshots/jenkins-build.PNG)
 
-console output:
-![Jenkins Console1](screenshots/jenkins-console1.PNG)
-![Jenkins Console2](screenshots/jenkins-console2.PNG)
-![Jenkins Console3](screenshots/jenkins-console3.PNG)
+---
 
-### Newman Execution
-Below is the terminal output after running the collection:
+## Newman Execution
+
+Below is the terminal output after running the collection using Newman:
+
 ![Newman CLI](screenshots/newman-cli.PNG)
 
-### Newman HTML Report Execution
-Below is the terminal output after running the collection:
+---
+
+## Newman HTML Report
+
+The following screenshots show the generated HTML report after test execution:
+
 ![Newman Report](screenshots/newman-report_html.PNG)
 ![Newman Report2](screenshots/newman-report_html2.PNG)
 ![Newman Report3](screenshots/newman-report_html3.PNG)
 ![Newman Report4](screenshots/newman-report_html4.PNG)
+
+---
+
+## Jenkins CI Integration
+
+Jenkins is configured to automate Newman test execution as part of a CI pipeline.
+
+### Jenkins Build
+
+![Console Build](screenshots/jenkins-build.PNG)
+
+---
+
+### Jenkins Console Output
+
+![Jenkins Console1](screenshots/jenkins-console1.PNG)
+![Jenkins Console2](screenshots/jenkins-console2.PNG)
+![Jenkins Console3](screenshots/jenkins-console3.PNG)
