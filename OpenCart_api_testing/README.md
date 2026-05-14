@@ -86,7 +86,7 @@ console output:
 
 ### Newman Execution
 Below is the terminal output after running the collection:
-![Newman CLI](secreenshots/newman-cli.PNG.PNG)
+![Newman CLI](secreenshots/newman-cli.PNG)
 
 ### Newman HTML Report Execution
 Below is the terminal output after running the collection:
